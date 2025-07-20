@@ -447,6 +447,23 @@
       section { padding: 68px 2vw 28px 2vw;}
       .timeline-dot { width: 12px; height: 12px;}
     }
+    .hacker-line {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #0f0, #0f0 50%, #00ffea);
+  box-shadow: 0 0 15px #0f0, 0 0 30px #0f0, 0 0 60px #00ffea;
+  animation: glowMove 2s linear infinite;
+  margin-top: 100px;
+}
+
+@keyframes glowMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
   </style>
 </head>
 <body>
@@ -471,6 +488,7 @@
       <p class="subtitle">Full-Stack Developer | Cyberpunk Creator</p>
       <div class="scroll-down">&#9660;</div>
     </section>
+    <div class="hacker-line"></div>
     <!-- About Section -->
     <section class="about" id="about">
       <h2>&gt; About Me</h2>
@@ -495,6 +513,7 @@
         </div>
       </div>
     </section>
+    <div class="hacker-line"></div>
     <!-- Projects Section -->
     <section class="projects" id="projects">
       <h2>&gt; Projects</h2>
@@ -537,6 +556,7 @@
         </div>
       </div>
     </section>
+    <div class="hacker-line"></div>
     <!-- Skills Section -->
     <section class="skills" id="skills">
       <h2>&gt; Skills</h2>
@@ -561,6 +581,7 @@
         <span class="tech neon" data-tooltip="Node.js">N</span>
       </div>
     </section>
+    <div class="hacker-line"></div>
     <!-- Contact Section -->
     <section class="contact" id="contact">
       <h2>&gt; Contact</h2>
@@ -583,6 +604,7 @@
     <button id="to-top" title="Back to Top">&#8593;</button>
   </footer>
   <script>
+    <div class="hacker-line"></div>
     // ===== Matrix Rain =====
     const canvas = document.getElementById('matrix-bg');
     const ctx = canvas.getContext('2d');
